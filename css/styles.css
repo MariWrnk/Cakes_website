@@ -161,6 +161,11 @@ footer{
     float: right;
 }
 
+a{
+    text-decoration: none;
+    color:  #423636;
+}
+
 .consistImage{
     width: 250px;
     height: 250px;
