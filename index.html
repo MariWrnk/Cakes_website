@@ -29,18 +29,18 @@
             <section>
                 <h1>Галерея</h1>
                 <p class="galleryComponent">
-                    <img src="resources/gal1.1.jpg" alt="gallery photo 1" class="galleryImage">
-                    <img src="resources/gal1.2.jpg" alt="gallery photo 2" class="galleryImage">
-                    <img src="resources/gal1.3.jpeg" alt="gallery photo 3" class="galleryImage">
-                    <img src="resources/gal1.4.jpg" alt="gallery photo 4" class="galleryImage">
+                    <img src="resources/gal1.1.jpg" alt="gallery photo 1" class="galleryImage" id="g1">
+                    <img src="resources/gal1.2.jpg" alt="gallery photo 2" class="galleryImage" id="g2">
+                    <img src="resources/gal1.3.jpeg" alt="gallery photo 3" class="galleryImage" id="g3">
+                    <img src="resources/gal1.4.jpg" alt="gallery photo 4" class="galleryImage" id="g4">
                 </p>
                 <p class="galleryComponent">
-                    <img src="resources/gal2.1.jpg" alt="gallery photo 5" class="galleryImage">
-                    <img src="resources/gal2.2.jpg" alt="gallery photo 6" class="galleryImage">
-                    <img src="resources/gal2.3.jpeg" alt="gallery photo 7" class="galleryImage">
-                    <img src="resources/gal2.4.jpg" alt="gallery photo 8" class="galleryImage">
+                    <img src="resources/gal2.1.jpg" alt="gallery photo 5" class="galleryImage" id="g5">
+                    <img src="resources/gal2.2.jpg" alt="gallery photo 6" class="galleryImage" id="g6">
+                    <img src="resources/gal2.3.jpeg" alt="gallery photo 7" class="galleryImage" id="g7">
+                    <img src="resources/gal2.4.jpg" alt="gallery photo 8" class="galleryImage" id="g8">
                 </p>
-                </script>           
+                <img src="" alt="big image" id="fullImage">          
             </section>
             <section>
                 <h1>Отзывы</h1>
@@ -140,6 +140,40 @@
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
+
+            fullImage.onclick = function(){
+                fullImage.style.display = "none"
+            }
+
+            function setFull(image){
+                fullImage.setAttribute("src", image.getAttribute("src"))
+                fullImage.style.display = "block"
+            }
+
+            g1.onclick = function(){
+                setFull(g1)               
+            }
+            g2.onclick = function(){
+                setFull(g2)
+            }
+            g3.onclick = function(){
+                setFull(g3)
+            }
+            g4.onclick = function(){
+                setFull(g4)
+            }
+            g5.onclick = function(){
+                setFull(g5)
+            }
+            g6.onclick = function(){
+                setFull(g6)
+            }
+            g7.onclick = function(){
+                setFull(g7)
+            }
+            g8.onclick = function(){
+                setFull(g8)
+            }                    
         </script>
     </body>
 </html>
